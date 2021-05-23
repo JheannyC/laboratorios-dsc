@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "b8e896b5-8c28-4973-abfc-bc4cefb14dc0",
+		"name": "DISCIPLINA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar todas as disciplinas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/disciplinas",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pegar disciplina pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/disciplinas/10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comentarios",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comentario\": \"É aqui que acontece a magia!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/disciplinas/comentarios/10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas",
+						"comentarios",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add likes",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"likes\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/disciplinas/likes/6",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas",
+						"likes",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add nota",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nota\": 8.5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/disciplinas/nota/10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas",
+						"nota",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ranking de likes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/disciplinas/ranking/likes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas",
+						"ranking",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ranking de notas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/disciplinas/ranking/notas",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"disciplinas",
+						"ranking",
+						"notas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
