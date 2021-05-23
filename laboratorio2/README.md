@@ -1,4 +1,4 @@
-##Laboratório - roteiro 2
+## Laboratório - roteiro 2
 Objetivos:
 Aprender a escrever APIs com dados persistentes usando um esquema de dados relacional e relacionamentos JPA
 Tecnologias envolvidas:
