@@ -59,3 +59,5 @@ Classe que será o controlador do recurso /disciplinas e será marcada com @Rest
 Execute a sua aplicação no terminal, dentro do diretório raiz do seu projeto com o seguinte comando (caso não esteja usando o DvTools)
 
 $ ./mvnw spring-boot:run
+
+https://github.com/raquelvl/psoft
